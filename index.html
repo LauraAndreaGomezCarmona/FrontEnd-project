@@ -8,7 +8,7 @@
     <title>Sportit</title>
 </head>
 <body>
-    <header>
+    <header class="desktop">
         <h1><img class="logo" src="./Images/sportit-logo.png" alt="Sportit page logo"></h1>
         <nav>
             <ul class="menu-list">
@@ -21,6 +21,11 @@
         </nav>
         <button class="contact-button">Contact</button>
     </header>
+
+    <div class="mobile">
+        <h1><img class="logo" src="./Images/sportit-logo.png" alt="Sportit page logo"></h1>
+        <img class="hamburger-menu" src="./Images/hamburger-menu.png" alt="dropdown menu icon">
+    </div>
 
     <main>
         <section class="banner">
@@ -67,53 +72,105 @@
 
         <h5>Best of the month</h5>
         <section class="best-of-the-month">
-            <div class="players-cards">
+            <div class="players-cards Sanyo">
                 <img class="players-img" src="./Images/Sanyo.png" alt="Sanyo">
                 <h6>Sanyo</h6>
                 <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
             </div>
 
-            <div class="players-cards">
+            <div class="players-cards Lebron">
                 <img class="players-img" src="./Images/Lebron.png" alt="Lebron">
                 <h6>Lebron</h6>
                 <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
             </div>
 
-            <div class="players-cards">
+            <div class="players-cards Navarro">
                 <img class="players-img" src="./Images/Navarro.png" alt="Navarro">
                 <h6>Navarro</h6>
                 <p>Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
             </div>
         </section>
+
         <button class="more-button">More</button>
+
         <section class="get-to-know">
             <h3>Get to know the best teams of the year</h3>
             <button>Go for it</button>
         </section>
     </main>
-    <footer>
-        <img src="./Images/sportit-logo.png" alt="">
-        <ul>
-            <li><img src="./Images/fb-icon.png" alt="facebook icon"></li>
-            <li><img src="./Images/youtube-icon.png" alt="youtube icon"></li>
-            <li><img src="./Images/twitter-icon.png" alt="twitter icon"></li>
-            <li><img src="./Images/pinterest-icon.png" alt="pinterest icon"></li>
-            <li><img src="./Images/instagram-icon.png" alt="instagram icon"></li>
-        </ul>
+    <footer class="footer-desktop">
+        <div class="social-media">
+            <img src="./Images/footer-logo.png" alt="sportit-logo">
+            <ul>
+                <li><img src="./Images/fb-icon.png" alt="facebook icon"></li>
+                <li><img src="./Images/youtube-icon.png" alt="youtube icon"></li>
+                <li><img src="./Images/twitter-icon.png" alt="twitter icon"></li>
+                <li><img src="./Images/pinterest-icon.png" alt="pinterest icon"></li>
+                <li><img src="./Images/instagram-icon.png" alt="instagram icon"></li>
+            </ul>
+        </div>
 
-        <ul>
-            <li>Home</li>
-            <li>Pricing</li>
-            <li>Products</li>
-            <li>About Us</li>
-        </ul>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>Products</li>
+                <li>About Us</li>
+            </ul>
+        </div>
 
-        <ul>
-            <li>Trainning</li>
-            <li>Community</li>
-            <li>Privacy Policy</li>
-        </ul>
-        <p>Copyright 2020. All Rights Reserved</p>
+        <div>
+            <ul>
+                <li>Trainning</li>
+                <li>Community</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+
+        <div class="form-information">
+            <form action="./form.php">
+                <input type="text" name="information" id="information" placeholder="Update in your inbox...">
+                <input type="submit" value="Go">
+            </form>
+            <p>Copyright 2020. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <footer class="footer-mobile">
+        <div class="form-information">
+            <form action="./form.php">
+                <input type="text" name="information" id="information" placeholder="Update in your inbox...">
+                <input type="submit" value="Go">
+            </form>
+        </div>
+
+        <div class="display-flex">
+            <ul>
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>Products</li>
+                <li>About Us</li>
+            </ul>
+
+            <ul>
+                <li>Trainning</li>
+                <li>Community</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+
+        <div class="social-media">
+            <ul>
+                <li><img src="./Images/fb-icon.png" alt="facebook icon"></li>
+                <li><img src="./Images/youtube-icon.png" alt="youtube icon"></li>
+                <li><img src="./Images/twitter-icon.png" alt="twitter icon"></li>
+                <li><img src="./Images/pinterest-icon.png" alt="pinterest icon"></li>
+                <li><img src="./Images/instagram-icon.png" alt="instagram icon"></li>
+            </ul>
+
+            <img src="./Images/footer-logo.png" alt="sportit-logo">
+            <p>Copyright 2020. All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
